@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    background-color: rgba(105, 100, 100, 0.397);
+    margin: 10%;
+    border-radius: 1em;
+    padding: 1% 3% 1% 3%;
+}
+
+.titulo {
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;  
+}
+
+/*Menu*/
+
+:root {
+    --red: #e74c3c;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: rgba(8, 8, 8, 0.944);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: right;
+    background-color: rgba(248, 248, 248, 0.886);
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 2px;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: linear-gradient(to right, rgb(240, 71, 71), rgb(238, 148, 75), rgba(255, 238, 0, 0.993));
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu a:hover::before {
+    transform: scaleX(1);
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 10000;
+    top:0;
+    width: 100%;
+}
+
+/* header */
+
+header{
+  width: 100%;
+  height: 400px;
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, rgba(71, 6, 7, 0.377), rgba(112, 52, 3, 0.342), rgba(119, 92, 3, 0.384)), url(../Img/comidafondo2.jpg); 
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.11)), url(../Img/comidafondo2.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat:  repeat;
+}
+
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0, 0, 1000px, 0;
+}
+
+.textos-header h1 {
+  font-family: 'Righteous', cursive;
+  font-size:900%;
+  font-weight: 500px;
+  color: ghostwhite;
+}
+
+.textos-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: aliceblue;
+}
+
+/*Sobre nosotros*/
+
+.Nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
+  background-color: rgba(218, 213, 213, 0);
+  border-radius: 5px;
+  width:  100%;
+}
+
+.card-nosotros {
+  background: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.774);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.774);
+  margin-right: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+  height: 37%;
+}
+
+.Domicilios{
+  background-color: rgba(202, 1, 1, 0.911);
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  border-width: 3px;
+  margin: 5px;
+}
+
+.Reservas{
+  background-color: rgba(228, 107, 8, 0.918);
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  border-width: 3px;
+  margin: 5px;
+}
+
+.Pagos{
+  background-color: rgba(243, 208, 10, 0.733);
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  border-width: 3px;
+  margin: 5px;
+}
+
+.card-nosotros .cuerpo-card {
+  margin: 7px 5px 8px 5px;
+  color: rgb(0, 0, 0);
+  padding: 5px 0 5px 0;
+  width: 100%;
+  height: 90%;
+}
+
+.card-nosotros .cuerpo-card h5 {
+  padding-bottom: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.card-nosotros .cuerpo-card p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*Galeria*/
+
+#galeria {
+  margin: 1rem auto;
+  width:100%;
+  max-width:960px;
+  padding:0 20px 20px;
+  box-sizing: border-box;
+  column-count: 3;
+  /* Espacio entre columnas */
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+}
+
+article {
+  background:#fff;
+  border-radius:5px;
+  border:1px solid #ccc;
+  margin:0 0 20px 0;
+  text-align: center;
+  max-width: 100%;
+  filter: opacity(70%);
+
+  /*Evitamos que se corte al cambiar de columna*/
+  break-inside: avoid;
+  page-break-inside: avoid;         
+
+}
+
+article img {
+  width:100%;
+  text-decoration: none;
+}
+
+article:hover {
+  transition: .5s ease;
+  filter: opacity(100%);
+}
+
+figure {
+  padding:1rem;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+figcaption{
+  text-decoration: none;
+}
+
+.Portafolio {
+  /*background: #fff;*/
+  padding: 0;
+
+}
+
+/*Clientes*/
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cards .card {
+  background: #928d8d;
+  display: flex;
+  width: 46%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.cards .card > .contenido-texto-card {
+  width: 60%;
+  color: #fff;
+}
+
+.cards .card > .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+/*Noticias*/
+
+.Noticias {
+  display: flex;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: rgba(218, 213, 213, 0.562);
+  border-radius: 2em;
+  width:  100%;
+}
+
+.card {
+  border: #ccc;
+  margin-right: 10px;
+  position: relative;
+  padding: 10px;
+  border-color: blue;
+  border-radius: 2em;
+}
+
+.cuerpo-card h5, .cuerpo-card p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.cuerpo-card h5 {
+  font-size: 20px;
+}
+
+.cuerpo-card p {
+  font-size: 15px;
+}
+
+.card img {
+  width: 289px;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 2em;
+}
+
+
+/*Footer*/
+
+footer{
+  background: #0000006b;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+  text-align: center;
+}
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+
+.content-foo p {
+  color: #ccc;
+}
+
+.Titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #696464;
+}
+
+

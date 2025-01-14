@@ -1,0 +1,185 @@
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,*::before,*::after{
+	box-sizing: inherit;
+
+}
+body{
+	font-size: 16px;
+	line-height: 2;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold' sans-serif;
+	background-color: #AED6F1 ;
+}
+.
+}
+
+
+}
+.container p{
+	font-size: 2.6rem;
+	color: black;
+	text-shadow: 8px black;
+}
+.iconos{
+	flex-basis: calc(40.3%-1rem);
+	text-align: center;
+	background-position: center;
+}
+
+.iconos-nosotros{
+	display: flex;
+	justify-content: space-between;
+}
+
+.iconos-caract{
+	width: 90px;
+	display: inline-flex;
+}
+.motas{
+    max-width:55%;
+	height: auto;
+	margin: 25px;
+	padding: 5px;
+	display: orange;
+	margin: auto;
+}
+.iconos{
+	flex-basis: calc(33.3%-1rem);
+	text-align: center;
+
+}
+.div{ 
+display: block;
+ }
+.inferior{
+	display: flex;
+	justify-content:space-between;
+}
+.inferior.blog{
+	flex-basis:calc(40%-20px);
+}
+.contenedor.footer{
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.derechos{
+	margin: 0;
+	color: black;
+}
+.contenedor{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+h1{
+	font-size: 40px;
+
+}
+h2¨{
+	font-size: 36px
+}
+h3{
+	font-size: 32px;
+}
+.position-absolute{
+	position: relative;
+
+	height: 100px;
+	width: 200px;
+
+	background: #ffff99;
+	color: #333;
+}
+..position-absolute_content{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+
+	transform: translate(-50%, -50%);
+}
+
+.table-cell{
+	height: 100px;
+	width: 200px;
+}
+
+.table-cell_container{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.table-cell_content{
+	display: table-cell;
+
+	text-align: center;
+	vertical-align: middle;
+
+	background: #ffff99;
+	color: #333;
+}
+.text-css{
+	text-align: center;
+	display: block;
+}
+
+.img-centro{
+	margin: 10px auto: 10px ;
+	display: block;
+}
+
+.img-centro-vertical{
+	display: table-cell;
+	height: 800px;
+	vertical-align: middle;
+}
+nav{
+	text-align: right; 
+	padding:px 0 0;
+}
+nav>a{
+	color: black;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.rob{
+	background-position: center center;
+}
+
+.site-header.inicio{
+	background-image: url(img\header.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 140vh;
+	min-height: 400px;
+
+}
+.contenido-header{
+	height: 500;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contenedor{
+	max-width: 1200px
+	margin:0 auto;
+}
+.navegacion a{
+	font-family: 'Times New Roman' times sans-serif
+	color:white;
+	text-decoration: nome;
+	font-size: 18px;
+	margin-right: 20px;
+}
+
